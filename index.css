@@ -1,0 +1,86 @@
+html,
+body,
+* {
+  box-sizing: inherit;
+  font-family: "Thasadith", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 5rem;
+}
+header{
+  display: flex;
+
+}
+h1 {
+  font-size: 3rem;
+  color: teal;
+  margin: auto 5rem;
+}
+h2 {
+  color: teal;
+  font-size: 2.5rem;
+}
+h3 {
+  color: teal;
+  font-size: 2rem;
+}
+h4 {
+  color: teal;
+  font-size: 1.6rem;
+}
+p,li{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.intro{
+  padding-bottom: 2rem; 
+}
+.main{
+  display: flex;
+  justify-content: space-evenly;
+}
+.head{
+  text-align: center;
+}
+.main-item{
+  width: 50%;
+  padding: 3rem;
+}
+.personalInfo{
+  border-right: .5px solid rgba(0, 128, 128, 0.5);
+}
+.education{
+  border-top: .5px solid rgba(0, 128, 128, 0.5);  
+  border-bottom: .5px solid rgba(0, 128, 128, 0.5);  
+  margin-bottom: 2rem;
+}
+.education-items{
+  box-sizing: content-box;
+  margin: 2.5rem;
+  width: 33.33333%;
+  padding-right: 2.5rem;
+}
+.education-container{
+  display: flex; 
+  justify-content: space-evenly;
+}
+.education-container > :not(:last-child){
+  border-right: .5px solid rgba(0, 128, 128, 0.5);  
+}
+.skills-item{
+  
+  display: flex;
+  justify-content: space-between;
+}
+.my-img{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
