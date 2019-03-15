@@ -94,17 +94,17 @@ p,li{
   width: 10rem;
   border-radius: 50%;
 }
-@media only screen and (max-width:1026px){
+@media only screen and (max-width:64.13em){
   html{
     font-size: 55%;
   }
 }
-@media only screen and (max-width:903px){
+@media only screen and (max-width:56.44em){
   html{
     font-size: 50%;
   }
 }
-@media only screen and (max-width:700px){
+@media only screen and (max-width:43.75em){
   .education-container{
     flex-direction: column;
   }
@@ -118,7 +118,7 @@ p,li{
     border-bottom: .5px solid rgba(0, 128, 128, 0.5);  
   }
 }
-@media only screen and (max-width:620px){
+@media only screen and (max-width:38.75em){
   body{
     padding: 1rem;
   }
@@ -130,8 +130,20 @@ p,li{
   }
   .main-item{
     width: 100%;
+    padding: 0;
   }
   .personalInfo{
     border-right: 0 solid rgba(0, 128, 128, 0.5);
+  }
+}
+@media only screen and (max-width:21em){
+  h1{
+    font-size: 1.5rem;
+    margin: auto 0 ;
+  }
+  .my-img{
+    height: 7rem;
+    width: 7rem;
+    margin-right: 1.5rem;
   }
 }
