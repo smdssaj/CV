@@ -17,6 +17,7 @@ body {
 }
 header {
   padding: 2.5rem;
+  overflow: hidden;
   display: flex;
   height: 15rem;
   width: 100%;
@@ -123,7 +124,7 @@ main{
   }
 }
 @media only screen and (max-width: 38.75em) {
-  body {
+  main{
     padding: 0;
   }
   header {
@@ -141,8 +142,15 @@ main{
     width: 100%;
     padding: 0;
   }
+  .personalInfo,.education,.intro{
+    padding: 2.5rem;
+  }
   .personalInfo {
     border-right: 0 solid rgba(0, 128, 128, 0.5);
+  }
+  .skills{
+  border-top: 0.5px solid rgba(0, 128, 128, 0.5);
+    padding-top: 2.5rem;
   }
   .skills-item {
     padding: 1rem;
