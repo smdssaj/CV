@@ -31,10 +31,9 @@ body{
   box-shadow: -14px 9px 49px -13px rgba(0, 0, 0, 0.75);
 }
 header {
-  padding: 2.5rem;
   overflow: hidden;
   display: flex;
-  height: 15rem;
+  height: 10rem;
   width: 100%;
   color: aliceblue;
   background-color: rgb(11, 11, 36);
@@ -42,7 +41,6 @@ header {
 h1 {
   font-size: 3.8rem;
   color: aliceblue;
-  margin: auto 5rem;
   letter-spacing: 1rem;
   margin: auto;
 }
@@ -144,9 +142,9 @@ main {
   fill: teal;
 }
 .my-img {
-  height: 10rem;
-  margin: auto 0;
-  width: 10rem;
+  height: 8rem;
+  margin: auto 3rem;
+  width: 8rem;
   border-radius: 50%;
 }
 footer {
@@ -190,18 +188,14 @@ footer {
   }
 }
 @media only screen and (max-width: 40em) {
+  h1{
+    letter-spacing: .5rem;
+  }
   .cv-container {
     margin: 5rem auto;
   }
   main {
     padding: 0;
-  }
-  header {
-    height: 10rem;
-    padding: 0 1rem;
-  }
-  h1 {
-    /* font-size: 1rem; */
   }
   .main-container {
     flex-direction: column;
@@ -230,7 +224,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.05);
   }
   .my-img {
-    margin-right: 1.5rem;
     height: 7rem;
     width: 7rem;
   }
@@ -240,14 +233,9 @@ footer {
     margin: 0;
     width: 100%
   }
-  header {
-    padding: 0;
-  }
   h1 {
     width: 25%;
     margin: auto 0;
-  }
-  .my-img {
-    margin: auto 3rem auto 3rem;
+    letter-spacing: 1rem;
   }
 }
