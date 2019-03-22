@@ -161,8 +161,13 @@ main {
 .skills {
   padding-left: 2.5rem;
 }
+.skills-container{
+  display: flex;
+  flex-wrap: wrap;
+}
 .skills-item {
   padding: 0 1rem;
+  width: 50%;
 }
 .rate {
   background-color: gainsboro;
@@ -294,9 +299,13 @@ main {
     border-top: 0.5px solid rgba(0, 128, 128, 0.5);
     padding-top: 2.5rem;
   }
+  .skills-container{
+    display: flex;
+    flex-wrap: wrap;
+  }
   .skills-item {
     padding: 1rem;
-    border: none;
+    width: 100%;
   }
   .skills-item:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.025);
