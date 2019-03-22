@@ -3,6 +3,7 @@ body,
 * {
   box-sizing: inherit;
   font-family: "Thasadith", sans-serif;
+  letter-spacing: .2rem;
   /* padding: 2rem 2rem; */
 }
 html {
@@ -12,19 +13,23 @@ html {
   background: teal;
   color: aliceblue;
 }
-body{
+body {
   margin: 0;
   padding: 0;
   background-size: cover;
   box-sizing: border-box;
-  background-image: linear-gradient(to left top , rgb(0, 128, 128) , rgb(2, 87, 87));
+  background-image: linear-gradient(
+    to left top,
+    rgb(1, 163, 163),
+    rgb(1, 71, 71)
+  );
 }
 .cv-container {
   padding: 0;
   margin: auto;
   display: flex;
-  flex-direction: column;
-  width: 85%;
+  /* flex-direction: column; */
+  width: 90%;
   margin: 10rem auto;
   -webkit-box-shadow: -14px 9px 49px -13px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -14px 9px 49px -13px rgba(0, 0, 0, 0.75);
@@ -33,16 +38,43 @@ body{
 header {
   overflow: hidden;
   display: flex;
-  height: 10rem;
-  width: 100%;
+  /* width: 30%; */
+  padding: 1.5rem;
+  white-space: nowrap;
+  flex-direction: column;
   color: aliceblue;
   background-color: rgb(11, 11, 36);
 }
+.personalInfo > .head > svg {
+  fill: rgb(1, 163, 163);
+}
+.personalInfo {
+  padding: 2.5rem;
+  color: rgb(1, 163, 163);
+}
+.personalInfo-title {
+  display: flex;
+  align-items: center;
+}
+.personalInfo-items {
+  color: aliceblue;
+  overflow: hidden;
+}
+.personalInfo-items a,
+.personalInfo-items a:active {
+  color: aliceblue;
+}
+.personalInfo-title > svg {
+  fill: rgb(1, 163, 163);
+  width: 2rem;
+  height: 2rem;
+  margin: 0 2rem 0 0;
+}
 h1 {
-  font-size: 3.8rem;
+  /* font-size: 3.8rem; */
   color: aliceblue;
   letter-spacing: 1rem;
-  margin: auto;
+  margin: 1rem auto;
 }
 h2 {
   color: teal;
@@ -57,8 +89,10 @@ h4 {
   font-size: 1.6rem;
 }
 p,
-li {
+li,
+a {
   font-size: 1.6rem;
+  margin: 2rem 0;
   font-weight: bold;
 }
 .intro {
@@ -67,12 +101,13 @@ li {
 }
 main {
   padding: 2.5rem;
+  width: 80%;
   background-color: aliceblue;
 }
-.main-container {
+/* .main-container {
   display: flex;
   justify-content: space-evenly;
-}
+} */
 .head {
   display: flex;
   align-items: center;
@@ -86,22 +121,14 @@ main {
   margin: 1rem;
   border-radius: 50%;
 }
+.main-item >section:not(:last-child){
+  border-bottom: 0.5px solid rgba(0, 128, 128, 0.5);
+}
 .main-item {
-  width: 50%;
   padding: 3rem;
 }
-.personalInfo {
-  border-right: 0.5px solid rgba(0, 128, 128, 0.5);
-}
-.personalInfo-title {
-  display: flex;
-  align-items: center;
-}
-.personalInfo-title > svg {
-  fill: teal;
-  width: 2rem;
-  height: 2rem;
-  margin: 0 2rem 0 0;
+.main-item:not(:last-child){
+  border-bottom: 0.5px solid rgba(0, 128, 128, 0.5);
 }
 .education {
   border-top: 0.5px solid rgba(0, 128, 128, 0.5);
@@ -110,9 +137,9 @@ main {
 }
 .education-items {
   box-sizing: content-box;
-  margin: 2.5rem;
-  width: 33.33333%;
-  padding-right: 2.5rem;
+  margin: 2.5rem 0;
+  width: 50%;
+  padding: 1.5rem;
 }
 .education-container {
   display: flex;
@@ -121,39 +148,82 @@ main {
 .education-container > :not(:last-child) {
   border-right: 0.5px solid rgba(0, 128, 128, 0.5);
 }
+.certifications-container{
+  display: flex;
+}
+.certifications-items{
+  width: 50%;
+  padding: 1.5rem;
+}
+.certifications-items:not(:last-child) {
+  border-right: 0.5px solid rgba(0, 128, 128, 0.5);
+}
 .skills {
   padding-left: 2.5rem;
 }
 .skills-item {
-  display: flex;
   padding: 0 1rem;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 0.5px solid rgba(0, 128, 128, 0.5);
 }
 .rate {
-  display: flex;
-  width: 30%;
-  justify-content: space-around;
+  background-color: gainsboro;
+  width: 100%;
+  height: 0.5rem;
+  margin-bottom: 2rem;
+  position: relative;
 }
-.rate > svg {
-  width: 2rem;
-  height: 2rem;
-  fill: teal;
+.rate-65::before {
+  content: "";
+  width: 65%;
+  height: 100%;
+  bottom: 0;
+  background-color: teal;
+  position: absolute;
+}
+.rate-75::before {
+  content: "";
+  width: 75%;
+  height: 100%;
+  bottom: 0;
+  background-color: teal;
+  position: absolute;
+}
+.rate-80::before {
+  content: "";
+  width: 80%;
+  height: 100%;
+  bottom: 0;
+  background-color: teal;
+  position: absolute;
+}
+.rate-95::before {
+  content: "";
+  width: 95%;
+  height: 100%;
+  bottom: 0;
+  background-color: teal;
+  position: absolute;
+}
+.rate-90::before {
+  content: "";
+  width: 90%;
+  height: 100%;
+  bottom: 0;
+  background-color: teal;
+  position: absolute;
+}
+.rate-100::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-color: teal;
+  position: absolute;
 }
 .my-img {
-  height: 8rem;
-  margin: auto 3rem;
-  width: 8rem;
+  height: 15rem;
+  margin: 3rem auto;
+  width: 15rem;
   border-radius: 50%;
-}
-footer {
-  background-color: rgb(11, 11, 36);
-  color: aliceblue;
-  display: flex;
-}
-.footer-item {
-  padding: 0.5rem;
 }
 @media only screen and (max-width: 64.13em) {
   html {
@@ -161,17 +231,23 @@ footer {
   }
 }
 @media only screen and (max-width: 56.44em) {
+  .cv-container {
+    margin: 0;
+    width: 100%;
+  }
   html {
     font-size: 50%;
   }
-  h1 {
-    font-size: 2.7rem;
-    margin: auto;
-  }
 }
 @media only screen and (max-width: 43.75em) {
-  h1{
-    font-size: 2.2rem;
+  .cv-container {
+    flex-direction: column;
+  }
+  header {
+    width: 100%;
+  }
+  main {
+    width: 100%;
   }
   .education-container {
     flex-direction: column;
@@ -186,14 +262,17 @@ footer {
     border-right: none;
     border-bottom: 0.5px solid rgba(0, 128, 128, 0.5);
   }
+  .certifications-container{
+    flex-direction: column;
+  }
+  .certifications-items{
+    width: 100%;
+  }
+  .certifications-items:not(:last-child) {
+    border-right: none
+  }
 }
 @media only screen and (max-width: 40em) {
-  h1{
-    letter-spacing: .5rem;
-  }
-  .cv-container {
-    margin: 5rem auto;
-  }
   main {
     padding: 0;
   }
@@ -221,21 +300,6 @@ footer {
     border: none;
   }
   .skills-item:nth-child(even) {
-    background-color: rgba(0, 0, 0, 0.05);
-  }
-  .my-img {
-    height: 7rem;
-    width: 7rem;
-  }
-}
-@media only screen and (max-width: 29.1em) {
-  .cv-container {
-    margin: 0;
-    width: 100%
-  }
-  h1 {
-    width: 25%;
-    margin: auto 0;
-    letter-spacing: 1rem;
+    background-color: rgba(0, 0, 0, 0.025);
   }
 }
