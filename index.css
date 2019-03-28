@@ -28,7 +28,6 @@ body {
   padding: 0;
   margin: auto;
   display: flex;
-  /* flex-direction: column; */
   width: 90%;
   margin: 10rem auto;
   -webkit-box-shadow: -14px 9px 49px -13px rgba(0, 0, 0, 0.75);
@@ -38,7 +37,6 @@ body {
 header {
   overflow: hidden;
   display: flex;
-  /* width: 30%; */
   padding: 1.5rem;
   white-space: nowrap;
   flex-direction: column;
@@ -71,7 +69,6 @@ header {
   margin: 0 2rem 0 0;
 }
 h1 {
-  /* font-size: 3.8rem; */
   color: aliceblue;
   letter-spacing: 1rem;
   margin: 1rem auto;
@@ -104,10 +101,6 @@ main {
   width: 80%;
   background-color: aliceblue;
 }
-/* .main-container {
-  display: flex;
-  justify-content: space-evenly;
-} */
 .head {
   display: flex;
   align-items: center;
