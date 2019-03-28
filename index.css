@@ -220,12 +220,6 @@ main {
   background-color: teal;
   position: absolute;
 }
-.my-img {
-  height: 15rem;
-  margin: 3rem auto;
-  width: 15rem;
-  border-radius: 50%;
-}
 @media only screen and (max-width: 64.13em) {
   html {
     font-size: 55%;
@@ -250,29 +244,8 @@ main {
   main {
     width: 100%;
   }
-  .education-container {
-    flex-direction: column;
-  }
-  .education-items {
-    margin: 0;
-    padding-bottom: 2.5rem;
-    padding-right: 0;
-    width: 100%;
-  }
-  .education-container > :not(:last-child) {
-    border-right: none;
-  }
-  .certifications-container{
-    flex-direction: column;
-  }
-  .certifications-items{
-    width: 100%;
-  }
-  .certifications-items:not(:last-child) {
-    border-right: none
-  }
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 26.5em) {
   main {
     padding: 0;
   }
@@ -305,5 +278,26 @@ main {
   }
   .skills-item:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.025);
+  }
+  .education-container {
+    flex-direction: column;
+  }
+  .education-items {
+    margin: 0;
+    padding-bottom: 2.5rem;
+    padding-right: 0;
+    width: 100%;
+  }
+  .education-container > :not(:last-child) {
+    border-right: none;
+  }
+  .certifications-container{
+    flex-direction: column;
+  }
+  .certifications-items{
+    width: 100%;
+  }
+  .certifications-items:not(:last-child) {
+    border-right: none
   }
 }
