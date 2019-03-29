@@ -28,10 +28,8 @@ body {
   padding: 0;
   margin: auto;
   display: flex;
-  width: 100%;
-  min-height: 100vh;
-  margin: -2rem 0 0 0;
-  /* margin: 10rem auto; */
+  width: 90%;
+  margin: 10rem auto;
   -webkit-box-shadow: -14px 9px 49px -13px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -14px 9px 49px -13px rgba(0, 0, 0, 0.75);
   box-shadow: -14px 9px 49px -13px rgba(0, 0, 0, 0.75);
