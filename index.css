@@ -28,8 +28,10 @@ body {
   padding: 0;
   margin: auto;
   display: flex;
-  width: 90%;
-  margin: 10rem auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: -2rem 0 0 0;
+  /* margin: 10rem auto; */
   -webkit-box-shadow: -14px 9px 49px -13px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -14px 9px 49px -13px rgba(0, 0, 0, 0.75);
   box-shadow: -14px 9px 49px -13px rgba(0, 0, 0, 0.75);
@@ -119,8 +121,6 @@ main {
   border-top: 0.5px solid rgba(0, 128, 128, 0.5);
 }
 .education {
-  /* border-top: 0.5px solid rgba(0, 128, 128, 0.5);
-  border-bottom: 0.5px solid rgba(0, 128, 128, 0.5); */
   margin-bottom: 2rem;
 }
 .education-items {
@@ -215,6 +215,12 @@ main {
   background-color: teal;
   position: absolute;
 }
+.my-img {
+  height: 15rem;
+  margin: 3rem auto;
+  width: 15rem;
+  border-radius: 50%;
+}
 @media only screen and (max-width: 64.13em) {
   html {
     font-size: 55%;
@@ -260,7 +266,6 @@ main {
     border-right: none;
   }
   .skills {
-    border-top: 0.5px solid rgba(0, 128, 128, 0.5);
     padding-top: 2.5rem;
   }
   .skills-container{
