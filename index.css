@@ -275,7 +275,7 @@ main {
     padding: 1rem;
     width: 100%;
   }
-  .skills-item:nth-child(even) {
+  .skills-item:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.025);
   }
   .education-container {
